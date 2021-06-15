@@ -1,0 +1,6 @@
+foo:
+  account_sid: aaa
+  auth-token: bbb
+  serviceId: ccc 
+boo:
+  bar: ddd
