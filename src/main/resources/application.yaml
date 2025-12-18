@@ -2,11 +2,11 @@ foo:
   simple-prop1: some simple property
 boo:
   flag: false
-  inner-var:
+  inner-class-var:
     str-prop: property of inner pojo defined as var property
     duration-prop: 10s
     long-prop: 11
-  inner-val:
+  inner-class-val:
     str-prop: property of inner pojo defined as val property
     duration-prop: 10s
     long-prop: 11

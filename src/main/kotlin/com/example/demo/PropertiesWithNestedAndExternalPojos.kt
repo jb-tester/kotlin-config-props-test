@@ -11,10 +11,10 @@ class PropertiesWithNestedAndExternalPojos {
     var flag = true
 
     // @NestedConfigurationProperty
-    val innerVal = InnerClass()
+    val innerClassVal = InnerClass()
 
    // @NestedConfigurationProperty
-    var innerVar = InnerClass()
+    var innerClassVar = InnerClass()
 
     @NestedConfigurationProperty
     val externalClassVal = ExternalClass()

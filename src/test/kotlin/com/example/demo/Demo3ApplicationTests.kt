@@ -14,13 +14,13 @@ class Demo3ApplicationTests(
 
     @Test
     fun testNestedPojoVals() {
-        println(propertiesWithNestedAndExternalPojos.innerVal.strProp)
-        assertEquals("property of inner pojo defined as val property", propertiesWithNestedAndExternalPojos.innerVal.strProp)
+        println(propertiesWithNestedAndExternalPojos.innerClassVal.strProp)
+        assertEquals("property of inner pojo defined as val property", propertiesWithNestedAndExternalPojos.innerClassVal.strProp)
     }
     @Test
     fun testNestedPojoVars() {
-        println(propertiesWithNestedAndExternalPojos.innerVar.strProp)
-        assertEquals("property of inner pojo defined as var property", propertiesWithNestedAndExternalPojos.innerVar.strProp)
+        println(propertiesWithNestedAndExternalPojos.innerClassVar.strProp)
+        assertEquals("property of inner pojo defined as var property", propertiesWithNestedAndExternalPojos.innerClassVar.strProp)
     }
     @Test
     fun testExternalClassVals() {
