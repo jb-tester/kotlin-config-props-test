@@ -1,8 +1,8 @@
 {
   "properties": [
     {
-      "name": "boo.bar",
+      "name": "json-only.prop",
       "type": "java.lang.String",
-      "description": "Description for boo.bar."
+      "description": "Description for json-only.prop."
   }
 ] }

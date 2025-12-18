@@ -1,6 +1,26 @@
 foo:
-  account_sid: aaa
-  auth-token: bbb
-  serviceId: ccc 
+  simple-prop1: some simple property
 boo:
-  bar: ddd
+  flag: false
+  inner-var:
+    str-prop: property of inner pojo defined as var property
+    duration-prop: 10s
+    long-prop: 11
+  inner-val:
+    str-prop: property of inner pojo defined as val property
+    duration-prop: 10s
+    long-prop: 11
+  external-data-class:
+    prop1: property of external data class defined as var property
+  external-class-val:
+    prop1: property of external class defined as val property
+  external-class-var:
+    prop1: property of external class defined as var property
+bar:
+  prop1: zzz
+  data:
+    bar-data: property of external class defined as constructor parameter
+  inner:
+    foo-data: property of inner data class defined as constructor parameter
+json-only:
+  prop: from additional-spring-configuration-metadata.json
