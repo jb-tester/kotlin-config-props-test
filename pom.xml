@@ -5,17 +5,15 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.1</version>
+        <version>4.0.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mytests.spring.sb</groupId>
     <artifactId>kotlin-config-props-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo3</name>
-    <description>demo3</description>
     <properties>
-        <java.version>11</java.version>
-        <kotlin.version>1.5.10</kotlin.version>
+        <java.version>21</java.version>
+        <kotlin.version>2.2.21</kotlin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -28,7 +26,7 @@
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <artifactId>kotlin-stdlib</artifactId>
         </dependency>
 
         <dependency>
@@ -39,6 +37,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-test-junit5</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -57,6 +60,7 @@
                 <configuration>
                     <args>
                         <arg>-Xjsr305=strict</arg>
+                        <arg>-Xannotation-default-target=param-property</arg>
                     </args>
                     <compilerPlugins>
                         <plugin>spring</plugin>
@@ -69,29 +73,7 @@
                         <version>${kotlin.version}</version>
                     </dependency>
                 </dependencies>
-                <executions>
-                    <execution>
-                        <id>kapt</id>
-                        <goals>
-                            <goal>kapt</goal>
-                        </goals>
-                        <configuration>
-                            <sourceDirs>
-                                <sourceDir>src/main/kotlin</sourceDir>
-                            </sourceDirs>
-                            <annotationProcessorPaths>
-                                <annotationProcessorPath>
-                                    <groupId>org.springframework.boot</groupId>
-                                    <artifactId>spring-boot-configuration-processor</artifactId>
-                                    <version>2.5.1</version>
-                                </annotationProcessorPath>
-                            </annotationProcessorPaths>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
-
         </plugins>
     </build>
-
 </project>
