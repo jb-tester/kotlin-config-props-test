@@ -17,7 +17,6 @@ boo:
   external-class-var:
     prop1: property of external class defined as var property
 bar:
-  prop1: zzz
   data:
     bar-data: property of external class defined as constructor parameter
   inner:
