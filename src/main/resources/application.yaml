@@ -19,7 +19,15 @@ boo:
 bar:
   data:
     bar-data: property of external class defined as constructor parameter
+    bar-bar-data: property of external class defined as constructor parameter with initial value
   inner:
     foo-data: property of inner data class defined as constructor parameter
+  initialized-prop: some
+  another-prop: another
 json-only:
   prop: from additional-spring-configuration-metadata.json
+my:
+  data:
+    initialized-prop: foo
+    another-initialized-prop: bar
+    #not-initialized-prop: not-initialized

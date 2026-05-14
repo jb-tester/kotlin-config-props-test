@@ -8,12 +8,14 @@ import org.springframework.boot.context.properties.bind.ConstructorBinding
 data class ConstructorBindingProperties @ConstructorBinding constructor(
     @NestedConfigurationProperty
     val data: SomeDataClass,
-    val inner: InnerDataClass
+    val inner: InnerDataClass,
+    val initializedProp: String = "default",
+    val anotherProp: String
 )
 {
     data class InnerDataClass(val fooData: String)
 }
 
 data class SomeDataClass(
-    val barData: String
+    val barData: String = "default", val barBarData: String
 )
