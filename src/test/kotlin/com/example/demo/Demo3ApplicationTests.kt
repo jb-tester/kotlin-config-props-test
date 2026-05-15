@@ -24,14 +24,14 @@ class Demo3ApplicationTests(
     }
     @Test
     fun testExternalClassVals() {
-        println(propertiesWithNestedAndExternalPojos.externalClassVal.prop1)
+        println(propertiesWithNestedAndExternalPojos.externalClassWithValsVal.prop1)
         println(propertiesWithNestedAndExternalPojos.externalDataClass.prop1)
-        assertEquals("property of external class defined as val property", propertiesWithNestedAndExternalPojos.externalClassVal.prop1)
+        assertEquals("property of external class defined as val property", propertiesWithNestedAndExternalPojos.externalClassWithValsVal.prop1)
     }
     @Test
     fun testExternalClassVars() {
-        println(propertiesWithNestedAndExternalPojos.externalClassVar.prop1)
-        assertEquals("property of external class defined as var property", propertiesWithNestedAndExternalPojos.externalClassVar.prop1)
+        println(propertiesWithNestedAndExternalPojos.externalClassWithValsVar.prop1)
+        assertEquals("property of external class defined as var property", propertiesWithNestedAndExternalPojos.externalClassWithValsVar.prop1)
     }
     @Test
     fun testExternalDataClass() {

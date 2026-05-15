@@ -17,10 +17,10 @@ class PropertiesWithNestedAndExternalPojos {
     var innerClassVar = InnerClass()
 
     @NestedConfigurationProperty
-    val externalClassVal = ExternalClass()
+    val externalClassWithValsVal = ExternalClassWithVals()
 
     @NestedConfigurationProperty
-    var externalClassVar = ExternalClass()
+    var externalClassWithVarsVar = ExternalClassWithVars()
 
     @NestedConfigurationProperty
     lateinit var externalDataClass: ExternalDataClass

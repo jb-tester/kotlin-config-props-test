@@ -12,9 +12,9 @@ boo:
     long-prop: 11
   external-data-class:
     prop1: property of external data class defined as var property
-  external-class-val:
-    prop1: property of external class defined as val property
-  external-class-var:
+  external-class-with-vals-val:
+    prop1: property of external class defined as initialized val property
+  external-class-with-vars-var:
     prop1: property of external class defined as var property
 bar:
   data:

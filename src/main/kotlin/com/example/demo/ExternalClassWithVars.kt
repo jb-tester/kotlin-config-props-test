@@ -1,6 +1,6 @@
 package com.example.demo
 
 
-class ExternalClass {
+class ExternalClassWithVars {
     var prop1: String? = null
 }
